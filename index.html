@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adam Meddah's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1667d993f6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo2.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Student Programmer</p>
+          <h1>Hi, I'm <span>Adam Meddah</span></h1>
+        </div>
+      </div>
+    </div>
+    <!--About Section-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/work-1.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am a hardworking, dedicated student with a passion for everything technology! I strive to improve my skills and am always working on new projects.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('areas')">
+                Areas of interest
+              </p>
+              <p class="tab-links" onclick="opentab('other')">Other Skills</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span> <br />Utilizing multiple
+                  programming languages such as HTML, CSS and Javascript to
+                  create responsive websites
+                </li>
+                <li>
+                  <span>Mobile App Development</span> <br />
+                  Use the Flutter Framework to create responsive, intuitive mobile
+                  applications<br />
+                </li>
+                <li>
+                  <span>Computer App Development</span> <br />Employing
+                  different programming languages and GUIs such as Tkinter and
+                  PySimpleGUI to make useful, smooth computer applications
+                </li>
+                <li>
+                  <span>Game Development</span> <br />Using a variety of game
+                  engines and programming languages such as Python, Java, C++
+                  and C# in order to make enjoyable games with an abundance of
+                  creativity for numerous audiences
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="areas">
+              <ul>
+                <li>
+                  <span>Software</span> <br />I always work on creating useful,
+                  innovative projects to expand on my knowledge of software and
+                  usage of applications throughout the tech industry.
+                </li>
+                <li>
+                  <span>Websites</span> <br />
+                  I love creating different websites for all types of purposes,
+                  from blogs to this portfolio!
+                  <br />
+                </li>
+                <li>
+                  <span>Gaming</span> <br />As a gamer, I strive to create fun,
+                  unique experiences for everyone with the aim of achieving that
+                  same happiness I get when I play my favorite game.
+                </li>
+                <li>
+                  <span>Programming Languages</span> <br />I love learning
+                  programming languages and employing them in numerous different
+                  projects, such as JavaScript in this website!
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="other">
+              <ul>
+                <li>
+                  <span>Mathematics</span> <br />
+                  From using calculations in making innovative movement controls
+                  to making a calculator app, I always find ways to incorporate
+                  my understanding of math in my numerous projects.
+                </li>
+                <li>
+                  <span>English & Other Languages</span> <br />
+                  I have a passion for languages, not just the programming ones!
+                  I know English, French and Arabic, writing numerous novels and
+                  using my programming skills to make websites and interfaces
+                  for storymaking and blogging.
+                  <br />
+                </li>
+                <li>
+                  <span>Public Speaking</span> <br />
+                  Throughout my time spent in school, I couldn't count the
+                  amount of presentations I've done! From debates to writing and
+                  presenting speeches, I always enjoy the challenge that
+                  presenting gives me.
+                </li>
+                <li>
+                  <span>Collaborative Skills</span> <br />I work great in a
+                  team, giving ideas while using problem solving skills to solve
+                  disputes within the group decision making process. I happily
+                  take on the role of a leader to guide the group in the right
+                  direction.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Projects-->
+
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Software</h2>
+            <p>
+              From computer to mobile applications, this is software I have made
+              for different uses.
+            </p>
+            <a href="">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-computer"></i>
+            <h2>Websites</h2>
+            <p>My websites for all sorts of uses.</p>
+            <a href="">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h2>Games</h2>
+            <p>Games I have made to provide entertainment for all.</p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Project Highlights-->
+
+    <div id="highlights">
+      <div class="container">
+        <h1 class="sub-title">Project Highlights</h1>
+        <div class="highlights-list">
+          <div class="highlight">
+            <img src="images/pvault.png" alt="" class="pvault"/>
+            <div class="layer">
+              <h3>Password Manager</h3>
+              <p>Using secure encryption and password generation to safely store user passwords in database.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="highlight">
+            <img src="images/tanks.png" alt="" />
+            <div class="layer">
+              <h3>Tank Game</h3>
+              <p>A 2 player tank game playable on a single keyboard, with a heavy randomized component to the gameplay!</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          </div>
+          <a href="#" class="seebtn">See More Great Projects</a>
+        </div>
+      </div>
+    </div>
+        <!--Contact Information-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i> adamprograms28@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +1 (647) 550-7458</p>
+            <div class="social-icons">
+              <a href="https://github.com/AdamMeddah"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="images/Adam Meddah's Programming Resume.pdf" download class="seebtn btn2">Download Résumé</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="text" name="email" placeholder="Your Email" required>
+              <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+              <button type="submit" class="seebtn btn2">Submit Form</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
